@@ -37,7 +37,7 @@ function showCountry(arr) {
   }</span></p><p>Population: <span>${arr[0].population}</span></p>
   <p>Languages: <span>${arr[0].languages
     .map(elem => elem.name)
-    .join(' ,')}</span></p>`;
+    .join(', ')}</span></p>`;
 
   div.innerHTML = markUp;
 }
