@@ -8,7 +8,9 @@ function createMarkUp(arr) {
   div.innerHTML = '';
 
   if (arr.length > 10) {
-    Notiflix.Notify.info('Too short');
+    Notiflix.Notify.info(
+      'Too many matches found. Please enter a more specific name.'
+    );
     return;
   } else if (arr.length >= 2) {
     listOfCountries(arr);
